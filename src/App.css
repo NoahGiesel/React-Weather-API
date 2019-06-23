@@ -1,33 +1,228 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+/*   font-family: "Open Sans", serif;  */
+/*   font-family: 'Roboto Slab', serif; */
+/*   font-family: "Merriweather", serif; */
+
+html , body { 
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+body {
+  font-family: "Open Sans", serif;
+  background-image: url(img/bg.jpg);
+   background-attachment: fixed;
+  background-position: center; 
+  background-size: cover; 
+}
+ 
+ 
+/* remove all default values of html elements */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.contain__home {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-height: 50%;
+  transform: translate(-50%,-50%);
   text-align: center;
+  background-image: url(img/bg.jpg);
+   background-position: center; 
+   padding: 140px;
+   border-radius: 15px;
+   animation: bgBlur 2s forwards;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes bgBlur { 
+  0% { 
+    box-shadow: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  100%  { 
+    box-shadow: 0 25px 60px rgba(0,0,0,.8); 
   }
 }
+
+input { 
+  width: 200px;
+  height: 40px;
+  background-color: aliceblue;
+  margin: 50px 10px;
+  border: none;
+  padding: 1px 5px;
+  color: rgb(88, 88, 88);
+  text-transform: uppercase; 
+}
+
+button { 
+  width: 200px;
+  height: 45px;
+  background-color: rgb(228, 15, 86);
+  margin: 50px 10px;
+  border: none;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid rgba(17, 17, 17, 0.335);
+  cursor: pointer;
+}
+
+.titleText { 
+  background-color: rgba(255, 255, 255, 0.287);
+  color: #222;  
+  padding: 5px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.titleText h1, .titleText p { 
+  margin: 10px 0;
+  width: 100%;
+}
+
+ 
+.resultText{
+  background-color: rgba(255, 255, 255, 0.287); 
+  padding: 10px 20px ;
+  color: #222;  
+  font-weight: bold; 
+  margin-left: 50px; 
+
+}
+  
+
+@media screen and (max-width: 2000px) {
+  input { 
+    width: 150px;
+    height: 30px;
+    margin: 30px  10px;
+  }
+}
+@media screen and (max-width: 1500px) {
+ 
+  .resultText{  
+    margin-left: 0px;
+  }
+
+  .titleText { 
+    white-space: nowrap;
+
+  }
+
+  input , button{ 
+    margin: 30px;
+  }
+
+  input { 
+    width: 150px;
+    height: 30px;
+    margin: 30px  10px;
+  }
+  
+  
+}
+@media screen and (max-width: 724px) {
+ 
+  .titleText { 
+    white-space: normal; 
+    width: 80vw;
+  }
+  .contain__home { 
+    width: 20%;
+    height: 45%; 
+    
+  }
+  
+  .titleText { 
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    width: 50vw;
+
+  }
+  input {
+    margin: 50px 0 ; 
+    width: 100px;
+    height: 30px;
+    margin: 30px  10px;
+  }
+
+  form { 
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%)
+  }
+
+  .result__container{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    width: 50vw
+  }
+   
+  
+}
+
+@media screen and (max-width: 510px) {
+ 
+  .titleText { 
+    white-space: normal; 
+    width: 80vw;
+  }
+  .contain__home { 
+    width: 20%;
+    height: 45%; 
+    
+  }
+  
+  .titleText { 
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%)
+
+  }
+  input {
+    margin: 50px 0 ; 
+    width: 100px;
+    height: 30px;
+    margin: 30px  10px;
+  }
+
+  form { 
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%)
+  }
+
+  .result__container{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    width: 80vw
+  }
+   
+  
+}
+
+
