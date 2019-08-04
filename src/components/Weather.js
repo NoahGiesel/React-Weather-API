@@ -7,7 +7,7 @@ const Weather = (props) => (
         { props.humidity &&<p className="resultText"> Humidity : { props.humidity}</p> }
         { props.description &&<p className="resultText"> Descriptions : { props.description}</p> }
         { props.error &&<p className="resultText"> { props.error}</p> }
-    </div>
+    </div >
 )
 
 

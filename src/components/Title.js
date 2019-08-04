@@ -4,7 +4,7 @@ const Title = (props) => (
     <div className="titleText"> 
         <h1  >Weather Finder </h1>
         <p> Find out temperature , conditions and more ...</p>
-    </div>
+    </div >
 );
 
 export default Title;
