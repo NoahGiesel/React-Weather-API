@@ -35,7 +35,7 @@
      })
     }else {
       this.setState({
-        temperature : "", 
+        temperature : "" , 
         city : "" , 
         country :  "", 
         humidity : "",

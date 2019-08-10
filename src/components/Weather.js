@@ -11,4 +11,4 @@ const Weather = (props) => (
 )
 
 
-export default Weather;
+export default Weather ;
