@@ -36,13 +36,12 @@ body {
 .contain__home {
   position: absolute;
   left: 50%;
-  top: 50%;
-  max-height: 50%;
+  top: 50%; 
   transform: translate(-50%,-50%);
   text-align: center;
   background-image: url(img/bg.jpg);
    background-position: center; 
-   padding: 140px;
+   padding: 50px 140px;
    border-radius: 15px;
    animation: bgBlur 2s forwards;
 }
